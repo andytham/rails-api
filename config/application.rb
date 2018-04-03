@@ -20,6 +20,9 @@ module RailsApi
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
+    # if I want to CORS through application.rb
+    # config.action_dispatch.default_headers.merge!("Access-Control-Allow-Origin" => "*")
+    # config.action_dispatch.default_headers.merge!("Access-Control-Allow-Headers" => "X-Requested-With")
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
